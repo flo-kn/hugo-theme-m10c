@@ -1,0 +1,7 @@
+<!-- Create content/legal-notice.md to activate the footer with Legal Notice link -->
+<div>
+	{{- with .Site.GetPage "legal-notice.md" }}
+	<!-- Change "Legal Notice" to "Impressum", "Mentions légales", or an equivalent term depending on your jurisdiction. -->
+	<a href="{{ .RelPermalink }}">Legal Notice</a>
+	{{- end }}
+</div>
